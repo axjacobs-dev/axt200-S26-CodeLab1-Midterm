@@ -17,6 +17,7 @@ public class ASCIILevelLoader : MonoBehaviour
     public GameObject player;
     public GameObject door;
     public GameObject bridge;
+    public GameObject endText;
     public string fileLocation; //declares string for file location
 
     string fullPath; //full path to the current level file
@@ -153,6 +154,9 @@ public class ASCIILevelLoader : MonoBehaviour
                         break;
                     case 'H':
                         newObject = Instantiate<GameObject>(bridge);
+                        break;
+                    case 'z':
+                        newObject = Instantiate<GameObject>(endText);
                         break;
                     default:
                         break;

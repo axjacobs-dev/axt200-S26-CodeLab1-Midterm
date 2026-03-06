@@ -603,6 +603,7 @@ MonoBehaviour:
   player: {fileID: 3316359584729526129, guid: 3c05da2b53ae8ed4fb0ad9b39946b680, type: 3}
   door: {fileID: 677096240067320392, guid: 79719c3a4751c0c45874261b27732db8, type: 3}
   bridge: {fileID: 5465922838243115342, guid: 6cb2cc65ab859c54e9f84334c2cedbc6, type: 3}
+  endText: {fileID: 6428145350814351281, guid: dc6eac09f094bcf4fa5ac1abf690df27, type: 3}
   fileLocation: Resources/Levels/Level<num>.txt
   xOffset: 0
   yOffset: 0

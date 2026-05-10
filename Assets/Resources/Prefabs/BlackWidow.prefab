@@ -172,7 +172,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0574be2446611004a839f95afd37dc7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpiderCollision
+  insectData: {fileID: 0}
   spiderData: {fileID: 11400000, guid: fee77bfc412f08545b689987bcd993f8, type: 2}
+  gameStats: {fileID: 11400000, guid: 65a9af04f775ad645a0970ceb39c7b5b, type: 2}
 --- !u!54 &3110932906911394145
 Rigidbody:
   m_ObjectHideFlags: 0

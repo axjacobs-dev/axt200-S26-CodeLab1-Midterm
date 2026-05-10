@@ -413,6 +413,7 @@
 "Assets/Scripts/CicadaCollision.cs"
 "Assets/Scripts/CicadaData.cs"
 "Assets/Scripts/CicadaPlatformMovement.cs"
+"Assets/Scripts/GameStats.cs"
 "Assets/Scripts/GoalScript.cs"
 "Assets/Scripts/HealthTracker.cs"
 "Assets/Scripts/InsectCollision.cs"
@@ -423,9 +424,11 @@
 "Assets/Scripts/PlayerController.cs"
 "Assets/Scripts/PlayerData.cs"
 "Assets/Scripts/PlayerHealth.cs"
+"Assets/Scripts/RestartGame.cs"
 "Assets/Scripts/SpiderCollision.cs"
 "Assets/Scripts/SpiderData.cs"
 "Assets/Scripts/SpiderMovement.cs"
+"Assets/Scripts/StatsTracker.cs"
 "Assets/Scripts/WASDController.cs"
 -langversion:9.0
 /deterministic

@@ -188,3 +188,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
   playerData: {fileID: 11400000, guid: ec19ce5ed6a483c428f4778a6e86af0e, type: 2}
+  gameStats: {fileID: 11400000, guid: 65a9af04f775ad645a0970ceb39c7b5b, type: 2}

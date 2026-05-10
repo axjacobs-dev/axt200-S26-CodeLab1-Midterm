@@ -4,6 +4,7 @@ public class PlayerHealth : MonoBehaviour
 {
     //reference to scriptable object
     public PlayerData playerData;
+    public GameStats gameStats;
 
     void Start()
     {
@@ -18,6 +19,7 @@ public class PlayerHealth : MonoBehaviour
         if (transform.position.y < -10f)
         {
             ASCIILevelLoader.instance.resetCount++;
+            gameStats.totalResets++;
             ASCIILevelLoader.instance.CurrentLevel = ASCIILevelLoader.instance.CurrentLevel;
         }
     } 
@@ -25,6 +27,7 @@ public class PlayerHealth : MonoBehaviour
     public void TakeDamage(int amount)
     {
         playerData.currentHealth -= amount;
+        gameStats.totalDamageTaken += amount;
         Debug.Log("Health: " + playerData.currentHealth);
 
         if (playerData.currentHealth <= 0)
@@ -33,6 +36,7 @@ public class PlayerHealth : MonoBehaviour
             //game over logic 
             //resets game if player dies
             //resets health
+            gameStats.totalResets++;
             ASCIILevelLoader.instance.playerData.ResetHealth();
             ASCIILevelLoader.instance.CurrentLevel = 0;
         }

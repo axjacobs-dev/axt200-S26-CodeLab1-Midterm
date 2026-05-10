@@ -27,6 +27,13 @@ public class PlayerController : MonoBehaviour
 //this variable stores the x and y-axis values
     private Vector2 moveAmount; 
 //activates the action map if the player Game Object is active in the scene
+    
+    void Start()
+        {
+            float penalty = ASCIILevelLoader.instance.resetCount * 0.5f;
+            moveSpeed = Mathf.Max(1f, moveSpeed - penalty);
+            jumpSpeed = Mathf.Max(1f, jumpSpeed - penalty);
+        }
     private void OnEnable()
         {
             inputActions.FindActionMap("Player").Enable();

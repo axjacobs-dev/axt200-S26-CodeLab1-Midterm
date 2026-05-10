@@ -1,17 +1,17 @@
 using UnityEngine;
 
-public class SpiderCollision : MonoBehaviour
+public class SpiderCollision : InsectCollision
 {
     public SpiderData spiderData;
-
-    void OnTriggerEnter(Collider other)
+    protected override void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
             PlayerHealth playerHealth = other.GetComponent<PlayerHealth>();
             if (playerHealth != null)
             {
-                playerHealth.TakeDamage(spiderData.damage);
+                int escalatingDamage = spiderData.damage + ASCIILevelLoader.instance.resetCount;
+                playerHealth.TakeDamage(escalatingDamage);
             }
         }
     }

@@ -1,17 +1,15 @@
 using UnityEngine;
 
-public class CicadaCollision : MonoBehaviour
+public class CicadaCollision : InsectCollision
 {
-     public CicadaData cicadaData;
-
-    void OnTriggerEnter(Collider other)
+    private void OnCollisionEnter(Collision other)
     {
-        if (other.CompareTag("Player"))
+        if (other.gameObject.CompareTag("Player"))
         {
-            PlayerHealth playerHealth = other.GetComponent<PlayerHealth>();
+            PlayerHealth playerHealth = other.gameObject.GetComponent<PlayerHealth>();
             if (playerHealth != null)
             {
-                playerHealth.TakeDamage(cicadaData.damage);
+                playerHealth.TakeDamage(insectData.damage);
             }
         }
     }

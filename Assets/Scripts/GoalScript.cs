@@ -4,7 +4,7 @@ public class GoalScript : MonoBehaviour
 {
     void OnCollisionEnter(Collision other)
     {
-        Debug.Log("Great Job");
+        Debug.Log("Next level!");
         ASCIILevelLoader.instance.CurrentLevel++;
     }
 

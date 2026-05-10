@@ -415,6 +415,7 @@
 "Assets/Scripts/CicadaPlatformMovement.cs"
 "Assets/Scripts/GoalScript.cs"
 "Assets/Scripts/HealthTracker.cs"
+"Assets/Scripts/InsectCollision.cs"
 "Assets/Scripts/InsectData.cs"
 "Assets/Scripts/ObstacleScript.cs"
 "Assets/Scripts/PingPongMovement.cs"

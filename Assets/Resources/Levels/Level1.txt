@@ -3,5 +3,5 @@
 ...C..............WWW
 ...C.............WWWW
 ...C............WWWWW
-d..C..........WWWWWWW
+d..C...........WWWWWW
 WWWWWWWWWWWWWWWWWWWWW

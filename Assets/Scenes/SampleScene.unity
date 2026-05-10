@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 3
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 0}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -548,7 +548,7 @@ Light:
   serializedVersion: 12
   m_Type: 1
   m_Color: {r: 0.7921569, g: 0.8039216, b: 0.7921569, a: 1}
-  m_Intensity: 2
+  m_Intensity: 1.68
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -655,7 +655,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: hell
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -664,8 +664,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4279769338
+  m_fontColor: {r: 0.9811321, g: 0.09255962, b: 0.09255962, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -682,8 +682,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -721,7 +721,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: -125.53693, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -749,10 +749,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 185953621}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchorMin: {x: 0, y: 0.035148147}
+  m_AnchorMax: {x: 0.16947916, y: 0.08444445}
+  m_AnchoredPosition: {x: -1, y: 1.5}
+  m_SizeDelta: {x: -125, y: -3}
   m_Pivot: {x: 0, y: 0}
 --- !u!1 &1857020158
 GameObject:
@@ -817,7 +817,9 @@ MonoBehaviour:
   obstacle: {fileID: 3650780230519630328, guid: 8ec69799fc259d147b44a441274741b7, type: 3}
   portal: {fileID: 6440073750282222188, guid: 66543d3f5a6c16f41bce2566d546657d, type: 3}
   cicadaPlatform: {fileID: 6627857442476892083, guid: c2b4bd6abb44a9147a468991a413805e, type: 3}
+  Lucifer: {fileID: 3548490275530877422, guid: a47f6eb596d61f64c845cb65d57d2157, type: 3}
   fileLocation: Resources/Levels/Level<num>.txt
+  resetCount: 0
   xOffset: 0
   yOffset: 0
 --- !u!82 &1857020161

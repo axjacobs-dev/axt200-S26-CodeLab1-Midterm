@@ -17,6 +17,7 @@ public class PlayerHealth : MonoBehaviour
         //health does not reset
         if (transform.position.y < -10f)
         {
+            ASCIILevelLoader.instance.resetCount++;
             ASCIILevelLoader.instance.CurrentLevel = ASCIILevelLoader.instance.CurrentLevel;
         }
     } 

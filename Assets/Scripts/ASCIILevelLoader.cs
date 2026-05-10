@@ -21,10 +21,8 @@ public class ASCIILevelLoader : MonoBehaviour
     public GameObject endText;
     public GameObject obstacle;
     public GameObject portal;
-
-
-
     public GameObject cicadaPlatform;
+    public GameObject Lucifer;
     public string fileLocation; //declares string for file location
 
     string fullPath; //full path to the current level file
@@ -45,6 +43,7 @@ public class ASCIILevelLoader : MonoBehaviour
             return currentLevel;
         }
     }
+    public int resetCount = 0;
 
     //next to ints are the 'easy' way to resolve offsets
     public int xOffset; //number to adjust offset of level loaded location
@@ -97,7 +96,7 @@ public class ASCIILevelLoader : MonoBehaviour
         foreach (string line in lines)
         {
             Debug.Log(line);
-//the 'harder' way to handle offsets
+            //the 'harder' way to handle offsets
             int lengthOfLine = line.Length / 2; //check to see how long this line is
 
             if (lengthOfLine > xOffset) // if it is longer than the current offset
@@ -175,6 +174,9 @@ public class ASCIILevelLoader : MonoBehaviour
                         break;
                     case 'y':
                         newObject = Instantiate<GameObject>(portal);
+                        break;
+                    case 'e':
+                        newObject = Instantiate<GameObject>(Lucifer);
                         break;
                     default:
                         break;

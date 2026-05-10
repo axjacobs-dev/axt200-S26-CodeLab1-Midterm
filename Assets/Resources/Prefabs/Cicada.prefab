@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6034153648403649517}
   - component: {fileID: 3070898590316333325}
   - component: {fileID: 6926170518948116365}
-  - component: {fileID: 7458789304375385125}
+  - component: {fileID: 6811723705640950177}
   m_Layer: 0
   m_Name: base
   m_TagString: Untagged
@@ -32,7 +32,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0.02394305, y: 0.8144249, z: 0.056478087, w: -0.57701737}
   m_LocalPosition: {x: -0.09270804, y: -0.067797974, z: 0.023563873}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 8765946548924003758}
@@ -109,7 +109,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -155,7 +155,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &7458789304375385125
+--- !u!114 &6811723705640950177
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -167,7 +167,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f57426cbd8502f41bde9b8ce01c1aaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CicadaCollision
-  cicadaData: {fileID: 11400000, guid: 553b9dcbe8f40be41a64c988e43fdea2, type: 2}
+  insectData: {fileID: 11400000, guid: afc7ceac196c26e4195bdb61f8092c5b, type: 2}
 --- !u!1 &6165017910773948981
 GameObject:
   m_ObjectHideFlags: 0

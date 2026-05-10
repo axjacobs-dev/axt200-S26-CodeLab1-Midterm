@@ -126,7 +126,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlatformMovement
   speed: 2
-  endX: -10
+  rangeMin: -5
+  rangeMax: 5
 --- !u!1 &6165017910773948981
 GameObject:
   m_ObjectHideFlags: 0
@@ -136,6 +137,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8765946548924003758}
+  - component: {fileID: 5137431803285867158}
   m_Layer: 0
   m_Name: CicadaPlatform
   m_TagString: Untagged
@@ -159,3 +161,17 @@ Transform:
   - {fileID: 5407583664007205947}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5137431803285867158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6165017910773948981}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c415bb3d61ba5944b5adbc8e130c446, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CicadaPlatformMovement
+  speed: 2
+  endX: -7

@@ -8,7 +8,7 @@ public class PlayerHealth : MonoBehaviour
     void Start()
     {
         //sets health to max health at start of game
-        playerData.ResetHealth();
+        //playerData.ResetHealth();
     }
 
     void Update()

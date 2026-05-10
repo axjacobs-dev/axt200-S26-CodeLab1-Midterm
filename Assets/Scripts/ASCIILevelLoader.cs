@@ -19,6 +19,10 @@ public class ASCIILevelLoader : MonoBehaviour
     public GameObject door;
     public GameObject bridge;
     public GameObject endText;
+    public GameObject obstacle;
+    public GameObject portal;
+
+
 
     public GameObject cicadaPlatform;
     public string fileLocation; //declares string for file location
@@ -165,6 +169,12 @@ public class ASCIILevelLoader : MonoBehaviour
                         break;
                     case 'x':
                         newObject = Instantiate<GameObject>(cicadaPlatform);
+                        break;
+                    case 'o':
+                        newObject = Instantiate<GameObject>(obstacle);
+                        break;
+                    case 'y':
+                        newObject = Instantiate<GameObject>(portal);
                         break;
                     default:
                         break;
